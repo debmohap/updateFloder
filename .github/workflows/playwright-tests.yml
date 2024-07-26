@@ -2,13 +2,13 @@ name: Run Playwright Tests
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/20 * * * *' # Runs every 20 minutes
   push:
     branches:
-      - main
+      - main # Trigger on push to main branch
   pull_request:
     branches:
-      - main
+      - main # Trigger on pull request to main branch
 
 jobs:
   test:
@@ -21,13 +21,17 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '16' # Use the Node.js version appropriate for your project
 
     - name: Install dependencies
       run: npm install
-      
+
     - name: Install Playwright browsers
       run: npx playwright install
 
-    - name: Run Playwright tests
-      run: npx playwright test --reporter=html
+    - name: Set up Xvfb (X virtual framebuffer)
+      run: sudo apt-get install -y xvfb
+
+    - name: Run Playwright tests with Xvfb
+      run: |
+        xvfb-run npx playwright test --reporter=html
