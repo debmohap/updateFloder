@@ -19,7 +19,7 @@ test.describe('UPDATE RESUME', () => {
       // await page.waitForNavigation()
       await page.waitForTimeout(20000)
       await page.goto('https://www.naukri.com/mnjuser/profile?id=&altresid')
-      await page.waitForTimeout(20000)
+      // await page.waitForTimeout(20000)
       // const fileChooserPromise = page.waitForEvent('filechooser', {timeout: 60000})
       // const fileChooserPromise = page.waitForEvent('filechooser')
       // await page.click('input[value="Update resume"]')
