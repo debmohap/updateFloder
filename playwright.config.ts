@@ -1,6 +1,4 @@
 import {defineConfig, devices} from '@playwright/test'
-// import {dat} from '../tests/api'
-
 require('dotenv').config()
 
 export default defineConfig({
@@ -9,10 +7,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [['list'], ['html', {outputFolder: 'Report'}]],
+  // reporter: [['list'], ['html']],
   use: {
     baseURL: process.env.URL,
-    trace: 'on-first-retry',
     video: 'on',
   },
   projects: [
@@ -21,6 +18,5 @@ export default defineConfig({
       use: {...devices['Desktop Chrome']},
     },
   ],
-
   globalSetup: require.resolve('./global-setup'),
 })
