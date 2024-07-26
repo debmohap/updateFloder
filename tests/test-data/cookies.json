@@ -1,0 +1,80 @@
+[
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1753517411.281501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "NKWAP",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "3a8cc898a8dc8c7785bdf5721c218d9cf8b33e543f2b5445abb2d629263294f708b05ee52a8d9794~3a8cc898a8dc8c7785bdf5721c218d9cf8b33e543f2b5445abb2d629263294f708b05ee52a8d9794~1~0"
+    },
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1753517411.281598,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "_t_ds",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "13e6588c1721981658-213e6588c-013e6588c"
+    },
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1721988611.832493,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "bm_sv",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "D6A691EFD4CA69F131F5E78DD6ED5E69~YAAQDCozaly/3NaQAQAA5O0a7hjzDxdBp4pF5m5xDfMjfOg9pAOytJbmfSHuZj7TD99oUY3et42KCOMXKAZSkXHD8cZvWH2aegOHWNrpbCful9OiViSV+6bXADLYQ1oDGmi4psdC7o1Fs4U+3SIJckRDSqtBTJaK6+Rpf/hmdLD4GxGqNCZy7TVNF7vlfEqWf17y/5J9bxxlYHlnQteaU420y6lPWCRnz3DkNurGM3rakaG004lM5GZLTvnWoggs~1"
+    },
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1753517412.953255,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "J",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "0"
+    },
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1753517411.281551,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "MYNAUKRI[UNID]",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "a31abc649144465384de511a970c08b0"
+    },
+    {
+        "domain": ".naukri.com",
+        "expirationDate": 1753517411.281419,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "nauk_otl",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "67753c1b46a542ecbf6a153850cb1bb5"
+    }
+]
