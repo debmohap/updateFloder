@@ -6,7 +6,7 @@ require('dotenv').config()
 
 test.describe('UPDATE RESUME', () => {
   test('Update resume with saved cookies', async () => {
-    const browser: Browser = await chromium.launch({headless: false})
+    const browser: Browser = await chromium.launch({headless: true})
     const context = await browser.newContext()
     const cookies = JSON.parse(fs.readFileSync('./tests/test-data/cookies.json', 'utf-8'))
     await context.addCookies(cookies)
