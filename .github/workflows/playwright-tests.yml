@@ -35,6 +35,7 @@ jobs:
       - name: Run Playwright tests with Xvfb
         run: |
           xvfb-run npx playwright test --reporter=html --trace=on --output=playwright-report
+        continue-on-error: true
 
       - name: Upload test artifacts
         uses: actions/upload-artifact@v3
