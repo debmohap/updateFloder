@@ -34,10 +34,11 @@ jobs:
 
       - name: Run Playwright tests with Xvfb
         run: |
-          xvfb-run npx playwright test --reporter=html --trace=on
+          xvfb-run npx playwright test --reporter=html --trace=on --output-dir=playwright-report
 
-      - name: Upload test videos
+      - name: Upload test artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: test-videos
-          path: playwright-report/videos
+          name: playwright-artifacts
+          path: playwright-report
+          retention-days: 30
